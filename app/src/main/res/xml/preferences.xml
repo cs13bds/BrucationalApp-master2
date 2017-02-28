@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <PreferenceCategory
+        android:title="Basic Settings">
+
+    </PreferenceCategory>
+
+    <PreferenceScreen
+        android:key="button_voicemail_category_key"
+        android:title="Account Details"
+        android:persistent="false">
+        <EditTextPreference
+            android:key="Change_username"
+            android:title="Change Username" />
+        <!-- opens another nested subscreen -->
+        <EditTextPreference
+            android:key="Change_password"
+            android:title="Change password"
+            android:persistent="false">
+            ...
+        </EditTextPreference>
+
+    </PreferenceScreen>
+
+    <PreferenceCategory
+        android:title="Maps Settings">
+
+    </PreferenceCategory>
+    <PreferenceScreen
+        android:title="Change Maps View"
+        android:persistent="false">
+        <SwitchPreference
+            android:key="Road Map"
+            android:title="Road Map"/>
+        <SwitchPreference
+            android:key="Satellite"
+            android:title="Satellite"/>
+        <SwitchPreference
+            android:key="Hybrid"
+            android:title="Hybrid"/>
+        <SwitchPreference
+            android:key="Terrain"
+            android:title="Terrain"/>
+
+    </PreferenceScreen>
+
+
+
+    <PreferenceCategory
+        android:title="More Infomation">
+
+    </PreferenceCategory>
+
+    <Preference
+        android:title="Support"
+        android:defaultValue="false"/>
+    <Preference
+        android:title="Privacy Policy"
+        android:defaultValue="false"/>
+    <Preference
+        android:title="Terms of Service"
+        android:defaultValue="false"/>
+
+
+
+
+    <PreferenceCategory
+        android:title="Account Actions">
+
+    </PreferenceCategory>
+
+    <Preference
+        android:key="Log_out"
+        android:title="Log out"
+        android:defaultValue="false">
+
+    </Preference>
+
+
+
+
+
+
+
+</PreferenceScreen>

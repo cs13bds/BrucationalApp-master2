@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    tools:context="com.example.atulmalik.brucationalapp.Register"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BRUCATIONAL"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:gravity="center_horizontal"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="REGISTER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:id="@+id/textView4"
+        android:textColor="@color/colorPrimary"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPassR"
+        android:hint="Password"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/etEmailR"
+        android:layout_alignLeft="@+id/etEmailR"
+        android:layout_alignStart="@+id/etEmailR"
+        android:layout_alignRight="@+id/etEmailR"
+        android:layout_alignEnd="@+id/etEmailR" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPasscR"
+        android:hint="Confirm Password"
+        android:layout_below="@+id/etPassR"
+        android:layout_alignLeft="@+id/etPassR"
+        android:layout_alignStart="@+id/etPassR"
+        android:layout_marginTop="21dp"
+        android:layout_alignRight="@+id/etPassR"
+        android:layout_alignEnd="@+id/etPassR" />
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:ems="10"
+        android:layout_marginTop="48dp"
+        android:id="@+id/etNameR"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginTop="24dp"
+        android:id="@+id/etEmailR"
+        android:hint="EMail ID"
+        android:layout_below="@+id/etNameR"
+        android:layout_alignLeft="@+id/etNameR"
+        android:layout_alignStart="@+id/etNameR"
+        android:layout_alignRight="@+id/etNameR"
+        android:layout_alignEnd="@+id/etNameR" />
+
+    <TextView
+        android:text="Already a member! Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLogin"
+        android:layout_below="@+id/btRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+    <Button
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btRegister"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/etPasscR"
+        android:layout_alignLeft="@+id/etPasscR"
+        android:layout_alignStart="@+id/etPasscR"
+        android:layout_alignRight="@+id/etPasscR"
+        android:layout_alignEnd="@+id/etPasscR" />
+
+</RelativeLayout>

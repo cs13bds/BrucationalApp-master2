@@ -239,7 +239,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         new LatLng(51.533556, -0.472578),
                         new LatLng(51.533609, -0.475583),
                         new LatLng(51.533027, -0.475594))
-                .strokeColor(Color.BLACK);
+                .strokeColor(Color.WHITE);
 
         //Markers for zone C
         Polygon polygon4 = mMap.addPolygon(rectOptions4);

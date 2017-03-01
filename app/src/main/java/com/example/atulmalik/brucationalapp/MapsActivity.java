@@ -31,6 +31,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polygon;
@@ -49,6 +50,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleApiClient googleApiClient;
     private LocationRequest locationRequest;
     protected static final String TAG = "MapsActivity";
+    private LatLngBounds BRUNEL = new LatLngBounds(
+            new LatLng(51.529863, -0.465732), new LatLng(51.534997, -0.482392));
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -121,6 +124,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         if (!success) {
             Log.e(TAG, "Style parsing failed.");
         }
+
+        //Sets boundaries to Brunel.
+        //mMap.setLatLngBoundsForCameraTarget(BRUNEL);
+        //Sets camera to view the bounds.
+        mMap.moveCamera(CameraUpdateFactory.newLatLngBounds(BRUNEL, 0));
 
         //Zone E
         PolygonOptions rectOptions = new PolygonOptions()
